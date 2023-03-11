@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2009
+# shellcheck disable=SC2034
+BUILD_ID="jenkins not kill me"
 PID=$(ps -ef | grep 'mvn-.*.jar' | grep -v grep | awk '{print $1}')
 if [ -z "$PID" ]; then
      echo "无相关进程"
