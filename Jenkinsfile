@@ -3,21 +3,21 @@ pipeline {
 
     stages {
 
-        stage ("main - 拉取代码") {
+        stage ("test - 拉取代码") {
             steps {
-                echo "main - 拉取成功"
+                echo "test - 拉取成功"
             }
         }
 
-        stage ("main - 执行构建 - 部署") {
+        stage ("test - 执行构建 - 部署") {
             steps {
-                echo "main - 构建完成"
+                echo "test - 构建完成"
             }
         }
 
         post {
             success {
-                echo "main - 部署成功"
+                echo "test - 部署成功"
             }
         }
 
