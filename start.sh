@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2009
 # shellcheck disable=SC2034
-JENKINS_NODE_COOKIE='dontkillme'
+#JENKINS_NODE_COOKIE='dontkillme'
 PID=$(jps | grep 'mvn-.*.jar' | awk '{print $1}')
 if [ -z "$PID" ]; then
      echo "无相关进程"
