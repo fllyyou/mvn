@@ -13,13 +13,15 @@ pipeline {
             steps {
                 echo "main - 构建完成"
             }
-        }
 
-        post {
-            success {
-                echo "main - 部署成功"
+            post {
+                 success {
+                     echo "main - 部署成功"
+                 }
             }
         }
+
+
 
     }
 }
